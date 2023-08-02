@@ -1,0 +1,50 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'hotfix/**'
+      - 'develop'
+      - 'feature/**'
+      - 'bugfix/**'
+      - 'release/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Runner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Set Up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Build
+        run: npm run build
+  version:
+    name: Version Runner
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v0
+        with:
+          versionSpec: 5.x
+          preferLatestVersion: true
+      - name: Determine Version
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v0
+        with:
+          useConfigFile: true
+      - name: Display Version
+        run: |
+          echo "Version: v${{ steps.gitversion.outputs.majorMinorPatch }}-${{ steps.gitversion.outputs.branchName }}"
