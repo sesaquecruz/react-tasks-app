@@ -25,7 +25,7 @@ Check out the live demo of the app on : [Task App](https://react-tasks-app-sable
 
 ## Backend Repository
 
-The backend API for this app is developed using Java with Spring and can be found in the following repository: [Task Manager API](https://github.com/sesaquecruz/java-tasks-api).
+The backend API for this app is developed using Java with Spring and can be found in the following repository: [Task API](https://github.com/sesaquecruz/java-tasks-api).
 
 ## Contributing
 
