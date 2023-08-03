@@ -78,7 +78,7 @@ export function ListTask() {
   }
 
   return (
-    <Box sx={{ width: 'lg', pt: 3, pl: 8, pr: 8 }}>
+    <Box sx={{ width: 'lg', pt: 3, pl: '5%', pr: '5%' }}>
       <Dialog open={deleteTaskDialog} onClose={handleDeleteDialogClose}>
         <DialogTitle>Delete</DialogTitle>
         <DialogContent>

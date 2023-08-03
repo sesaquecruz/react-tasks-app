@@ -22,12 +22,12 @@ export function TaskTable(props: Props) {
 	const rows: GridRowsProp = props.data.items;
 
   const columns: GridColDef[] = [
-    { field: "name", headerName: "Name", flex: 0.8 },
-    { field: "description", headerName: "Description", flex: 1, sortable: false },
-    { field: "priority", headerName: "Priority", flex: 0.5, sortable: false, renderCell: capitalizeFirstLetter },
-    { field: "status", headerName: "Status", flex: 0.5, sortable: false, renderCell: capitalizeFirstLetter },
-    { field: "due_date", headerName: "Due Date", flex: 0.7, renderCell: renderDatetCell },
-    { field: "id", headerName: "Actions", flex: 0.5, sortable: false, renderCell: renderActionsCell },
+    { field: "name", headerName: "Name", width: 175, },
+    { field: "description", headerName: "Description", minWidth: 200, flex: 1, hideable: true, sortable: false },
+    { field: "priority", headerName: "Priority", width: 110, sortable: false, renderCell: capitalizeFirstLetter },
+    { field: "status", headerName: "Status", width: 110, sortable: false, renderCell: capitalizeFirstLetter },
+    { field: "due_date", headerName: "Due Date", width: 150, renderCell: renderDatetCell },
+    { field: "id", headerName: "Actions", width: 110, sortable: false, renderCell: renderActionsCell },
   ];
 
   function capitalizeFirstLetter(params: GridRenderCellParams) {
