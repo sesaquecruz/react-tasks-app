@@ -33,7 +33,7 @@ export function TaskForm(props: Props) {
         mt: 3
       }}
     >
-      <Box maxWidth={400}>
+      <Box maxWidth="90%">
         <Paper>
           <Box pl={6} pt={5} pb={3}>
             <Typography variant="h5">{ props.title }</Typography>
