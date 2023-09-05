@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  tasks-app:
+    container_name: tasks-app
+    build:
+      context: .
+    ports:
+      - "8080:8080"
