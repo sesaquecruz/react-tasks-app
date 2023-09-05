@@ -1,8 +1,8 @@
 # Tasks App
 
-This is a web application to create and manage tasks efficiently. It allows create a account and login in it, then perform actions such as create, list, edit, and delete tasks. 
+This is a web application to create and manage tasks efficiently. Users can create an account and log in, then perform actions such as creating, listing, editing, and deleting tasks. 
 
-Also, it is possible search for tasks by term and view them sorted by name and due date. Each task contains: name, description, priority, status, and due date.
+It is also possible to search for tasks by term and view them sorted by name or due date. Each task contains a name, description, priority, status, and due date.
 
 ## Demo
 
