@@ -17,6 +17,8 @@ export function App() {
             <Route path="/tasks/create" element={ <ProtectedRouter> <CreateTask /> </ProtectedRouter> } />
             <Route path="/tasks/edit/:id" element={ <ProtectedRouter> <EditTask /> </ProtectedRouter>} />
 
+            <Route path="/healthz" element={ <h3>The App is Healthy</h3> } />
+
             <Route path="*" element={ <Home /> } />
           </Routes>
         </Layout>

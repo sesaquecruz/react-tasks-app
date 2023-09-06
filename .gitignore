@@ -7,7 +7,10 @@
 /build
 
 .DS_Store
-.env
+
+# In this case, all env info is public and visible in the url
+#.env 
+
 .env.local
 .env.development.local
 .env.test.local
