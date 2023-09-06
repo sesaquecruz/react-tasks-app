@@ -14,7 +14,7 @@ Other related repositories are:
 
 - [Tasks Api](https://github.com/sesaquecruz/java-tasks-api)
 - [Tasks Infra](https://github.com/sesaquecruz/k8s-tasks-infra)
-- [Tasks Docker Hub](https://hub.docker.com/r/sesaquecruz/tasks-app-frontend/tags)
+- [Tasks Docker Hub](https://hub.docker.com/r/sesaquecruz/react-tasks-app/tags)
 
 ## Features
 
