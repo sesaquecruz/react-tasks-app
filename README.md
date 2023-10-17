@@ -4,13 +4,7 @@ This is a web application to create and manage tasks efficiently. Users can crea
 
 It is also possible to search for tasks by term and view them sorted by name or due date. Each task contains a name, description, priority, status, and due date.
 
-## Demo
-
-The app is running in a Kubernetes cluster using GKE on GCP. Check out the live demo on: 
-
-- [Tasks App](https://git.tasks.sesaque.com)
-
-Other related repositories are:
+## Related repositories
 
 - [Tasks Api](https://github.com/sesaquecruz/java-tasks-api)
 - [Tasks Infra](https://github.com/sesaquecruz/k8s-tasks-infra)
